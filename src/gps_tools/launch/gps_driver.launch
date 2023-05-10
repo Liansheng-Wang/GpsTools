@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<launch>
+
+    <node name="gps_node" pkg="gps_tools" type="GpsReceiveNode" output="screen">
+        <param name="gps_topic" value= "/gps/raw_data" />
+        <param name="gps_odom_topic" value= "/global/gps/odom" />
+        <param name="serial_port" value= "/dev/ttyACM0" />
+    </node>
+    
+</launch>
